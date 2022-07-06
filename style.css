@@ -94,7 +94,6 @@ background-color: #015270;
   position: absolute;
   top: 109px;
   right: 25%;
-
   display: none;
   padding: 1rem;
 }
@@ -175,10 +174,13 @@ background-color: #015270;
    .drop {
     top: 110px;
    }
-
 }
 
 @media (max-width: 462px) {
  .drop {
   top: 210px;
  }
+ .nav {
+  top: 205px;
+ }
+}
