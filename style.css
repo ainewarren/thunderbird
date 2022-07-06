@@ -1,0 +1,150 @@
+body {
+background-color: #f6f0e2;
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 1.5rem;
+}
+
+h1 {
+  font-family: 'Tulpen One', sans-serif;
+  color: #015270;
+  font-size: 4rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h3 {
+      /* font-family: 'Nanum Myeongjo', serif; */
+      /* font-family: 'Pathway Gothic One', sans-serif; */
+      /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+.wrapper h2 {
+    font-family: 'Tulpen One', sans-serif;
+    font-size: 3.5rem;
+    color: #015270;
+}
+
+.navbar a {
+  color: #f6f0e2;
+}
+
+a:hover {
+    color: #ec7792;
+    text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.banner {
+  height: auto;
+}
+
+.banner-large {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1000px;
+  width: 100%;
+}
+
+.banner-large-img {
+  height: 1000px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.top {
+  /* height: 150px; */
+  background-color: #015270;
+  color: #47acb4;
+  border-bottom: 5px solid #e14038;
+
+}
+
+.top-large {
+  background-color: rgba(1, 82, 112, 0.7);
+  position: relative;
+  top: 50px;
+  left: 3%;
+  padding: 2rem 3rem;
+  border: 5px solid #e14038, 0;
+  z-index: 1;
+  width: 94%;
+  display: none;
+}
+
+.navbar {
+  background-color: #015270;
+  color: #f6f0e2;
+  margin: 2rem 1rem;
+}
+
+.navbar-large {
+  background-color: rgba(1, 82, 112, 0);
+ position: absolute;
+ top: 50px;
+ right: 3%;
+ width: 500px;
+ z-index: 2;
+ padding: 2rem;
+}
+
+
+.title h1 {
+  font-family: 'Bahianita', serif;
+  font-size: 5rem;
+  color: #47acb4;
+}
+
+.title-large h1 {
+  text-align: left;
+}
+
+.info {
+  text-align: center;
+ background-color: #f6f0e2;
+}
+
+.info-large {
+  position: absolute;
+  top: 300px;
+  right: 3%;
+  width: 500px;
+  background-color: rgba(246, 240, 226, 0.9);
+  transition-property: background-color;
+  transition-duration: 1s;
+  display: none;
+}
+
+.info-large:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.wrapper-large {
+  position: relative;
+  top: 832px;
+}
+
+.sunrise-large {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+ @media (min-width: 1400px) {
+  .top {
+    display: none;
+  }
+
+}
