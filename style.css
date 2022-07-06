@@ -81,7 +81,7 @@ img {
 .drop {
   position: absolute;
   z-index: 3;
-  right: 2%;
+  right: 20px;
   top: 35px;
   color: white;
 }
@@ -177,3 +177,8 @@ background-color: #015270;
    }
 
 }
+
+@media (max-width: 462px) {
+ .drop {
+  top: 210px;
+ }
