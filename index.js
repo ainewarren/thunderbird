@@ -7,7 +7,7 @@
       $(".sunrise img").attr("src", "images/sunrise-2160.jpg");
       $(".info").addClass("info-large").removeClass("container-fluid").removeClass("p-3").addClass("p-5");
       $(".top-large").addClass("show");
-      $(".navbar").addClass("navbar-large");
+      $(".nav").addClass("navbar-large").show();
       $(".banner").addClass("banner-large");
       $(".banner img").addClass("banner-large-img").attr("src", "images/thunderbird-2160.jpg");
       // $(".sunrise").addClass("sunrise-large");
@@ -15,6 +15,7 @@
       $(".wrapper").addClass("wrapper-large");
       $(".sunrise-large").show();
       $(".sunrise").hide();
+      $(".drop").hide();
       // $("#therapy-large").removeClass("hide");
       // $(".nav-therapy").attr("href", "#therapy-large");
       // $("#therapy-small").hide();
@@ -25,6 +26,7 @@
       $(".info").removeClass("info-large").addClass("container-fluid").addClass("p-3");
       $(".top").removeClass("hide");
       $(".top-large").removeClass("show");
+      $(".nav").removeClass("navbar-large").hide();
       $(".banner").removeClass("banner-large");
       $(".banner img").removeClass("banner-large-img").attr("src", "images/thunderbird-1440.jpg");
       // $(".sunrise").removeClass("sunrise-large");
@@ -32,6 +34,7 @@
       $(".wrapper").removeClass("wrapper-large");
       $(".sunrise-large").hide();
       $(".sunrise").show();
+      $(".drop").show();
       // $("#therapy-large").addClass("hide");
       // $("#therapy-small").show();
       // $(".nav-therapy").attr("href", "#therapy-small");
@@ -46,5 +49,11 @@ resize();
 
 
 $(window).on("load", function() {
-  $(".info").fadeIn(200);
+  $(".info-large").fadeIn(200);
 });
+
+$(".drop").on("click", function() {
+  $(".nav").toggle("slow");
+}
+
+)
