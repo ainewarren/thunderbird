@@ -1,33 +1,53 @@
 body {
 background-color: #f6f0e2;
 font-family: 'Roboto Condensed', sans-serif;
-font-size: 1.5rem;
-}
-
-h1 {
-  font-family: 'Tulpen One', sans-serif;
-  color: #0d574b;
-  font-size: 4rem;
+font-size: 1.4rem;
 }
 
 h1, h2, h3 {
     text-align: center;
+    font-family: 'Tulpen One', sans-serif;
+    color: #0d574b;
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 h3 {
-      /* font-family: 'Nanum Myeongjo', serif; */
-      /* font-family: 'Pathway Gothic One', sans-serif; */
-      /* font-family: 'Roboto Condensed', sans-serif; */
+  font-size: 3rem;
 }
 
-.wrapper h2 {
+h4 {
+      text-align: center;
+      font-size: 1.4rem;
+}
+
+.wrapper h2, .therapies-wrapper h2 {
     font-family: 'Tulpen One', sans-serif;
     font-size: 3.5rem;
     color: #0d574b;
 }
 
+/* .therapies-wrapper h2 {
+  margin-bottom: 1rem;
+} */
+
+.icons {
+  justify-content: center;
+  display: flex;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+
+
 .nav a {
   color: #f6f0e2;
+}
+
+.email a {
+  color: #0d574b;
 }
 
 a:hover {
@@ -35,9 +55,24 @@ a:hover {
     text-decoration: none;
 }
 
+.email a:hover {
+    color: #f6f0e2;
+}
+
+
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+li {
+  list-style-image: url("images/bullet-sm.png");
+}
+
+
+
+.info-large li {
+    text-align: left;
 }
 
 .banner {
@@ -78,6 +113,15 @@ img {
   display: none;
 }
 
+.top-therapies {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  padding-bottom: 1.5rem;
+    background-color: rgba(13, 87, 75, 1);
+}
+
 .drop {
   position: absolute;
   z-index: 3;
@@ -98,6 +142,8 @@ background-color: #0d574b;
   padding: 1rem;
 }
 
+
+
 .navbar-large {
   background-color: rgba(13, 87, 75, 0);
  position: absolute;
@@ -110,6 +156,10 @@ background-color: #0d574b;
    margin: 2rem 0.5rem;
 }
 
+.nav-therapies {
+  top: 0;
+  margin-top: 1.5rem;
+}
 
 .title h1 {
   font-family: 'Bahianita', serif;
@@ -117,25 +167,37 @@ background-color: #0d574b;
   color: #47afa1;
 }
 
+.title-therapies h1 {
+    font-size: 4rem;
+}
+
 .title-large h1 {
   text-align: left;
 }
 
 .info {
-  text-align: center;
+  /* text-align: center; */
  background-color: #f6f0e2;
+ padding: 2.4rem;
 }
 
 .info-large {
+   padding: 2.4rem;
   position: absolute;
-  top: 300px;
+  top: 290px;
   right: 3%;
-  width: 500px;
+  width: 550px;
   background-color: rgba(246, 240, 226, 0.9);
   transition-property: background-color;
   transition-duration: 1s;
   display: none;
 }
+
+/*
+
+.info-med {
+  width: 35%;
+} */
 
 .info-large:hover {
     background-color: rgba(255, 255, 255, 1);
@@ -179,36 +241,150 @@ background-color: #0d574b;
   display: block;
 }
 
+.packages {
+  background-color: white;
+    /* margin-right: 760px!important; */
+}
+.packages li {
+  font-size: 1.2rem;
 
+}
+
+#therapy .therapy:hover {
+  background: #fff;
+}
+
+#therapy.container {
+  padding: 3rem !important;
+}
+
+.therapies-2nd-img {
+  display: none;
+  margin-top: 3rem;
+}
+
+input, select, textarea {
+  width: 95%;
+}
+
+input[type=button] {
+  width: 200px;
+  margin: auto;
+}
+
+.therapies-btn {
+  background-color: #0d574b;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.therapies-btn:hover {
+    background-color: #2C2E2F;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+}
+
+#smart-button-container {
+  padding: 2rem;
+  padding-top: 1rem;
+}
+
+/* .therapies-text {
+  width: 60%;
+}
+
+.therapies-img {
+  width: 40%;
+} */
+
+
+/* .therapies-wrapper {
+  background-image: url("images/therapies-bg.jpg");
+background-repeat: no-repeat;
+  background-position: right top;
+} */
+
+/* .large-therapies {
+  display: none;
+  position: absolute;
+  top:auto;
+  left: 0;
+  width: 300px;
+  margin-left: 3%;
+} */
+
+
+/* @media (min-width: 1500px) {
+  .large-therapies {
+    display: block;
+}
+} */
+
+@media (min-width: 1200px) {
+.therapies-2nd-img {
+  display: block;
+}
+
+}
 
  @media (min-width: 1300px) {
   .top {
     display: none;
   }
+
+  /* .therapies-wrapper .container {
+    max-width: 720px;
+  } */
 }
 
 @media (max-width: 1600px) {
   .about-large {
       width: 45%;
-      top: 5%;
+      top: 7%;
   }
 }
 
 
 @media (max-width: 1400px) {
-  .info-large, .navbar-large {
+  .navbar-large {
     width: 35%;
   }
   .about-large {
       width: 50%;
+  }
 
+}
+
+@media (max-width: 1200px) {
+  input, select, textarea {
+    width: 85%;
+  }
+
+
+
+}
+
+@media (max-width: 991px) {
+  input, select, textarea {
+    width: 100%;
   }
 }
+
 
 
   @media (max-width: 576px) {
    .drop {
     top: 110px;
+   }
+
+   #therapy.container {
+    padding: 2rem 0 !important;
    }
 }
 
@@ -218,5 +394,20 @@ background-color: #0d574b;
  }
  .nav {
   top: 205px;
+ }
+ body {
+ font-size: 1.2rem;
+ }
+
+ h2 {
+       font-size: 3rem;
+ }
+
+ h3 {
+   font-size: 2.5rem;
+ }
+
+ h4 {
+    font-size: 1.2rem;
  }
 }

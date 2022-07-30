@@ -3,9 +3,13 @@
   function resize() {
     var w = window.innerWidth;
     console.log(w);
+
+
+
     if (w >= 1300) {
       // $(".sunrise img").attr("src", "images/sunrise-2160.jpg");
-      $(".info").addClass("info-large").removeClass("container-fluid").removeClass("p-3").addClass("p-5");
+      $(".info-large").addClass("show");
+      $(".info").addClass("hide");
       $(".top-large").addClass("show");
       $(".nav").addClass("navbar-large").show();
       $(".banner").addClass("banner-large");
@@ -18,15 +22,17 @@
       $(".dreamcatcher").hide();
       $(".drop").hide();
       $("#about").addClass("about-large");
-
       // $("#therapy-large").removeClass("hide");
       // $(".nav-therapy").attr("href", "#therapy-large");
       // $("#therapy-small").hide();
+
+
     }
 
     else if (w < 1300) {
       // $(".sunrise img").attr("src", "images/sunrise-1440.jpg");
-      $(".info").removeClass("info-large").addClass("container-fluid").addClass("p-3");
+      $(".info").removeClass("hide");
+      $(".info-large").removeClass("show");
       $(".top").removeClass("hide");
       $(".top-large").removeClass("show");
       $(".nav").removeClass("navbar-large").hide();
@@ -40,9 +46,8 @@
       $(".drop").show();
       $("#about").removeClass("about-large");
       $(".dreamcatcher").show();
-      // $("#therapy-large").addClass("hide");
-      // $("#therapy-small").show();
-      // $(".nav-therapy").attr("href", "#therapy-small");
+
+
     };
 
     if (w > 1300 && w < 1400) {
@@ -65,10 +70,6 @@ resize();
 resize();
   });
 
-
-$(window).on("load", function() {
-  $(".info-large").fadeIn(200);
-});
 
 $(".drop").on("click", function() {
   $(".nav").toggle("slow");
