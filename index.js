@@ -25,7 +25,7 @@
       // $("#therapy-large").removeClass("hide");
       // $(".nav-therapy").attr("href", "#therapy-large");
       // $("#therapy-small").hide();
-
+      $(".packages").removeClass("p-3").addClass("p-5");
 
     }
 
@@ -46,7 +46,7 @@
       $(".drop").show();
       $("#about").removeClass("about-large");
       $(".dreamcatcher").show();
-
+      $(".packages").removeClass("p-5").addClass("p-3");
 
     };
 
